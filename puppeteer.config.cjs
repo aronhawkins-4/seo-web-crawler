@@ -3,4 +3,6 @@ const { join } = require("path");
 /**
  * @type {import("puppeteer").Configuration}
  */
-module.exports = {};
+module.exports = {
+  cacheDirectory: join(__dirname, ".cache", "puppeteer"),
+};
